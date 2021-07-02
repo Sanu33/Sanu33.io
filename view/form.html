@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>   
+   <head>
+      <title>Form Validation</title>     
+      
+   </head>
+   <body>
+      <h1 align="center">FEED BACK FORM</h1>
+   <form name="form1" onsubmit="return (validate());" onreset="return(clearStorage());">
+      <fieldset>
+         <legend>PERSONAL DETAIL</legend>
+         <table border ="0">
+            <tr>
+               <td>Your name:</td><td><input type="text" id="name">
+
+            </tr>
+            <tr>
+               <td>E-mail Address:<td><input type="text" id="email">
+               </td>
+            </td>
+         </tr>
+      </table>
+</fieldset>
+<fieldset>
+         <legend>GENDER</legend>
+         <table border ="0">
+            <tr class="gender">
+               <td>Male</td><td><input type="radio" value="male" id="male">
+               <td>Female</td><td><input type="radio" value="female" id="female">
+         </tr>
+      </table>
+</fieldset>
+<fieldset>
+         <legend>Identification</legend>
+         <table border ="0">
+            <tr>
+         <input type="file" value="file" id="img">
+               
+         </tr>
+      </table>
+</fieldset>
+<fieldset>
+         <legend>Your experience here is:</legend>
+        <select name="choice" size="3">
+         <option> Outstanding</option>
+         <option>Very Good</option>
+         <option selected>Good</option>
+         <option>Average</option>
+         <option>Below Average</option>
+         <option>Awful</option>
+      </select>
+
+</fieldset>
+
+<p> If you have any further comments, please enter them here: <BR>
+   <textarea name="comments" rows="4" cols="40" id="textarea"></textarea></p>
+
+   <p><input type="submit"><input type="reset"></p>
+   <a href="info.html">View the Information</a>
+
+</form>
+   </body>
+   <script src="../js/form.js"></script>
+   </html>
